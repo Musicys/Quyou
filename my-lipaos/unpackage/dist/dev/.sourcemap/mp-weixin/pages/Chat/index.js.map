@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["D:/bianyi/hx/plugins/uniapp-cli-vite/uniPage:/cGFnZXMvQ2hhdC9pbmRleC52dWU"],"sourcesContent":["import MiniProgramPage from 'C:/Users/黎旺/Documents/HBuilderProjects/my-lipaos/pages/Chat/index.vue'\nwx.createPage(MiniProgramPage)"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AACA,GAAG,WAAW,eAAe;"}

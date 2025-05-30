@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yupi.yupao.mapper.SendMapper">
+
+    <resultMap id="BaseResultMap" type="com.yupi.yupao.model.domain.Send">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="context" column="context" jdbcType="VARCHAR"/>
+            <result property="userid" column="userId" jdbcType="BIGINT"/>
+            <result property="sendid" column="sendId" jdbcType="BIGINT"/>
+            <result property="yeslook" column="yeslook" jdbcType="TINYINT"/>
+            <result property="createtime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="isdelete" column="isDelete" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,context,userId,
+        sendId,yeslook,createTime,
+        isDelete
+    </sql>
+
+
+    <update id="markAsReadBySendId">
+        UPDATE send
+        SET yeslook = 1
+        WHERE sendId = #{sendId}
+          AND userId = #{userId}
+          AND yeslook = 0
+          AND isDelete = 0
+    </update>
+
+
+
+</mapper>

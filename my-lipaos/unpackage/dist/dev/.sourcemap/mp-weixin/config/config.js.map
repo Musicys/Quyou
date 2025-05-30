@@ -1,0 +1,1 @@
+{"version":3,"file":"config.js","sources":["config/config.js"],"sourcesContent":["//权限配置文件\nexport const ACCESS_ENUM = {\n        NO_LOGIN: \"notLogin\",\n        USER: \"user\"\n        // ADMIN: \"admin\"\n}"],"names":[],"mappings":";AACY,MAAC,cAAc;AAAA,EACnB,UAAU;AAAA,EACV,MAAM;AAAA;AAEd;;"}

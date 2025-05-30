@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["store/index.js"],"sourcesContent":["import {\n\tcreateStore\n} from \"vuex\";\n\nimport user from \"./modules/user\";\nexport default createStore({\n\tmodules: {\n\t\tuser: user\n\t},\n});\n\n"],"names":["createStore","user"],"mappings":";;;AAKA,MAAA,QAAeA,0BAAY;AAAA,EAC1B,SAAS;AAAA,IACR,MAAMC,mBAAI;AAAA,EACV;AACF,CAAC;;"}
